@@ -9,7 +9,7 @@ A multi source RAG pipeline with LangGraph orchestration, dual vector retrieval,
 
 ## How It Works
 
-Natural language query → **LLM signal extraction** → **multi-source retrieval** → **semantic reranking** → results with AI-generated explanations.
+Natural language query → **LLM signal extraction** → **multi-source retrieval** → **semantic reranking** → results with AI generated explanations.
 
 1. **Intent parsing** - Groq LLM extracts structured signals from the query: actors, directors, characters, genres, year range, scene text, theme text
 2. **Pre-filtering** - TMDB API narrows the candidate pool by actor/director filmography; local genre cache filters by genre 
@@ -22,12 +22,12 @@ Natural language query → **LLM signal extraction** → **multi-source retrieva
 
 | Layer | Tech |
 |---|---|
-| Orchestration | LangGraph (4-node state machine: parse → filter → search → finalize) |
+| Orchestration | LangGraph (4 node state machine: parse → filter → search → finalize) |
 | Vector DB | Qdrant (cosine similarity over subtitles + synopses) |
 | Embeddings | `sentence-transformers/all-MiniLM-L6-v2` |
 | Reranker | `cross-encoder/ms-marco-MiniLM-L-6-v2` |
-| LLM | Groq (Llama 3) — intent parsing + explanation generation |
-| Metadata | TMDB API — actor/director IDs, genre cache |
+| LLM | Groq (Llama 3) - intent parsing + explanation generation |
+| Metadata | TMDB API - actor/director IDs, genre cache |
 | Backend | FastAPI |
 | Frontend | React + Vite |
 
@@ -58,9 +58,9 @@ npm install
 docker-compose up
 ```
 
-4. **Genre cache** (one-time, avoids per-query TMDB calls)
+4. **Genre cache** (one time, avoids per query TMDB calls)
 ```bash
 python -m Scripts.build_genre_cache
 ```
 
-5. **Keys** — copy `.env.example` files and fill in your API keys
+5. **Keys** - copy `.env.example` files and fill in your API keys
