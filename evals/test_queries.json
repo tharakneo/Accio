@@ -1,0 +1,17 @@
+[
+  {"query": "captain america fighting iron man", "expected": "Captain America Civil War"},
+  {"query": "keanu reeves bending reality matrix", "expected": "The Matrix"},
+  {"query": "joker bomb blast batman movie", "expected": "The Dark Knight"},
+  {"query": "chris nolan movie about dreams", "expected": "Inception"},
+  {"query": "hobbit destroying the ring", "expected": "The Lord of the Rings The Return of the King"},
+  {"query": "spider man identity revealed", "expected": "Spider-Man No Way Home"},
+  {"query": "iron man snaps fingers infinity stones", "expected": "Avengers Endgame"},
+  {"query": "feel good underdog sports movie", "expected": "Rocky"},
+  {"query": "megan fox transformers car scene", "expected": "Transformers"},
+  {"query": "animated movie lion king father dies", "expected": "The Lion King"},
+  {"query": "heist movie vault ocean eleven", "expected": "Ocean's Eleven"},
+  {"query": "time travel delorean back to future", "expected": "Back to the Future"},
+  {"query": "ryan gosling blade runner replicant", "expected": "Blade Runner 2049"},
+  {"query": "movie about AI taking over humanity", "expected": "The Matrix"},
+  {"query": "war movie dunkirk soldiers beach", "expected": "Dunkirk"}
+]

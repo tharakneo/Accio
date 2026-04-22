@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+langgraph
+qdrant-client
+sentence-transformers
+google-generativeai
+pydantic
+python-dotenv
+requests
